@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { NextPage } from 'next';
-import { salesData } from '../data/sales';
-import { ThresholdInput } from '../components/molecules/ThresholdInput';
-import { ChartToggle } from '../components/molecules/ChartToggle';
-import { SalesChart } from '../components/organisms/SalesChart';
+import { salesData } from '@/data/sales';
+import { ThresholdInput } from '@/components/molecules/ThresholdInput';
+import { ChartToggle } from '@/components/molecules/ChartToggle';
+import { SalesChart } from '@/components/organisms/SalesChart';
 
 const Dashboard: NextPage = () => {
   const [threshold, setThreshold] = useState(0);

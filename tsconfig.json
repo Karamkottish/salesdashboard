@@ -14,13 +14,16 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-       "baseUrl": "src",
+
+    // ← your path mapping goes here:
+    "baseUrl": "src",
     "paths": {
       "@/data/*": ["data/*"],
       "@/components/*": ["components/*"]
+    }
   },
+
+  // ← include/exclude must be here, not inside compilerOptions:
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }
-  }
-
